@@ -3,12 +3,12 @@ let jogadas = 0
 
 function checkJogo(id) {
     const src = checkSrc(id)
-
+    const cpu = document.getElementById('cpu').checked
     if(src === 'branco.png') {
         document.getElementById(id).src = 'img/'+ jogador + '.png';
         jogadas++
         if (checkVitoria()) {
-            alert(`=======  O jogador ${jogador} venceu  =======`)
+            alert(`=======  O jogador '${jogador}' venceu  =======`)
             location.reload()
         }
         if (jogadas >= 9) {
@@ -20,6 +20,9 @@ function checkJogo(id) {
         } else {
             jogador = 'x'
         }
+    }
+    if(cpu && jogador === 'o') {
+        checkJogo(jogoCpu())
     }
 }
 
@@ -53,4 +56,12 @@ function checkVitoria() {
     if ((checkSrc("cel3")) === checkSrc('cel5') && checkSrc('cel3') === checkSrc('cel7') && checkSrc('cel3') !== 'branco.png') {
         return true
     }
+}
+
+function jogoCpu() {
+    if(checkSrc('cel5') === 'branco.png'){
+        return 'cel5'
+    }
+    return 'cel' + Math.floor((Math.random() * 9) + 1)
+
 }
