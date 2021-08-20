@@ -1,0 +1,33 @@
+h1 {text-align: center;}
+
+.container {
+    display: flex;
+    max-width: 400px;
+    min-height: 100px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.item {
+    flex: 1;
+    background: #fec63e;
+    text-align: center;
+    margin: 3px;
+    padding: 5px;
+}
+
+.start{
+    align-items: flex-start;
+}
+
+.end {
+    align-items: flex-end;
+}
+
+.center {
+    align-items: center;
+}
+
+.baseline {
+    align-items: baseline;
+}

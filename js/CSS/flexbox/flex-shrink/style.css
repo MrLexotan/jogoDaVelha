@@ -1,0 +1,31 @@
+h1 {text-align: center;}
+
+.container {
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.item {
+    flex: 1;
+    background: #fec63e;
+    text-align: center;
+    margin: 3px ;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.column-reverse {
+    flex-direction: column-reverse;
+}

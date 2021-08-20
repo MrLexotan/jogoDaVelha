@@ -1,0 +1,38 @@
+h1 {text-align: center;}
+
+.container {
+    max-width: 420px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid #ccc;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex: 1;
+    background: #fec63e;
+    text-align: center;
+    margin: 3px;
+    padding: 5px;
+}
+
+.flex-start {
+    align-content: flex-start;
+}
+
+.flex-end {
+    align-content: flex-end;
+}
+
+.center {
+    align-content: center;
+}
+
+.space-between {
+    align-content: space-between;
+}
+
+.space-around {
+    align-content: space-around;
+}

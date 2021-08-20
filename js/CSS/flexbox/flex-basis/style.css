@@ -1,0 +1,28 @@
+h1 {text-align: center;}
+
+.container {
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.item {
+    background: #fec63e;
+    text-align: center;
+    margin: 3px;
+    padding: 5px;
+}
+
+.column {
+    min-height: 300px;
+    flex-direction: column;
+}
+
+.grow1 {
+    flex-grow: 1;
+}
+
+.grow2 {
+    flex-grow: 2;
+}
